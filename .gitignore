@@ -1,0 +1,22 @@
+# Python venv
+venv/
+
+# Model checkpoints / large model files
+models/
+
+# Output logs, checkpoints, cache
+outputs/
+*.log
+*.ckpt
+
+# Data (if large or raw datasets)
+data/
+
+# Jupyter / Python cache
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# OS files
+.DS_Store
+Thumbs.db
