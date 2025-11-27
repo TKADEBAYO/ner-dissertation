@@ -1,16 +1,32 @@
 # Python venv
 venv/
 
-# Model checkpoints / large model files
-models/
+# Model checkpoints / large binaries
+models/*
+!models/**/
+!models/**/config.json
+!models/**/tokenizer_config.json
+!models/**/special_tokens_map.json
+!models/**/tokenizer.json
+!models/**/vocab.txt
 
 # Output logs, checkpoints, cache
-outputs/
+outputs/*
+!outputs/graphs/
+!outputs/graphs/**/*.png
+!outputs/metrics/
+!outputs/metrics/**/*.txt
+!outputs/metrics/**/*.csv
+
 *.log
 *.ckpt
 
-# Data (if large or raw datasets)
-data/
+# Data (ignore large files but allow processed sample jsonl files)
+data/*
+!data/**/
+!data/**/test.jsonl
+!data/**/train.jsonl
+!data/**/validation.jsonl
 
 # Jupyter / Python cache
 __pycache__/

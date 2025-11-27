@@ -1,0 +1,222 @@
+{
+  "builder_name": "bc5cdr",
+  "citation": "@article{DBLP:journals/biodb/LiSJSWLDMWL16,\n  author    = {Jiao Li and\n               Yueping Sun and\n               Robin J. Johnson and\n               Daniela Sciaky and\n               Chih{-}Hsuan Wei and\n               Robert Leaman and\n               Allan Peter Davis and\n               Carolyn J. Mattingly and\n               Thomas C. Wiegers and\n               Zhiyong Lu},\n  title     = {BioCreative {V} {CDR} task corpus: a resource for chemical disease\n               relation extraction},\n  journal   = {Database J. Biol. Databases Curation},\n  volume    = {2016},\n  year      = {2016},\n  url       = {https://doi.org/10.1093/database/baw068},\n  doi       = {10.1093/database/baw068},\n  timestamp = {Thu, 13 Aug 2020 12:41:41 +0200},\n  biburl    = {https://dblp.org/rec/journals/biodb/LiSJSWLDMWL16.bib},\n  bibsource = {dblp computer science bibliography, https://dblp.org}\n}\n",
+  "config_name": "bc5cdr_bigbio_kb",
+  "dataset_name": "bc5cdr",
+  "dataset_size": 6228922,
+  "description": "The BioCreative V Chemical Disease Relation (CDR) dataset is a large annotated text corpus of human annotations of all chemicals, diseases and their interactions in 1,500 PubMed articles.\n",
+  "download_checksums": {
+    "https://huggingface.co/datasets/bigbio/bc5cdr/resolve/main/CDR_Data.zip": {
+      "num_bytes": 20403150,
+      "checksum": null
+    }
+  },
+  "download_size": 20403150,
+  "features": {
+    "id": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "document_id": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "passages": {
+      "feature": {
+        "id": {
+          "dtype": "string",
+          "_type": "Value"
+        },
+        "type": {
+          "dtype": "string",
+          "_type": "Value"
+        },
+        "text": {
+          "feature": {
+            "dtype": "string",
+            "_type": "Value"
+          },
+          "_type": "List"
+        },
+        "offsets": {
+          "feature": {
+            "feature": {
+              "dtype": "int32",
+              "_type": "Value"
+            },
+            "_type": "List"
+          },
+          "_type": "List"
+        }
+      },
+      "_type": "List"
+    },
+    "entities": {
+      "feature": {
+        "id": {
+          "dtype": "string",
+          "_type": "Value"
+        },
+        "type": {
+          "dtype": "string",
+          "_type": "Value"
+        },
+        "text": {
+          "feature": {
+            "dtype": "string",
+            "_type": "Value"
+          },
+          "_type": "List"
+        },
+        "offsets": {
+          "feature": {
+            "feature": {
+              "dtype": "int32",
+              "_type": "Value"
+            },
+            "_type": "List"
+          },
+          "_type": "List"
+        },
+        "normalized": {
+          "feature": {
+            "db_name": {
+              "dtype": "string",
+              "_type": "Value"
+            },
+            "db_id": {
+              "dtype": "string",
+              "_type": "Value"
+            }
+          },
+          "_type": "List"
+        }
+      },
+      "_type": "List"
+    },
+    "events": {
+      "feature": {
+        "id": {
+          "dtype": "string",
+          "_type": "Value"
+        },
+        "type": {
+          "dtype": "string",
+          "_type": "Value"
+        },
+        "trigger": {
+          "text": {
+            "feature": {
+              "dtype": "string",
+              "_type": "Value"
+            },
+            "_type": "List"
+          },
+          "offsets": {
+            "feature": {
+              "feature": {
+                "dtype": "int32",
+                "_type": "Value"
+              },
+              "_type": "List"
+            },
+            "_type": "List"
+          }
+        },
+        "arguments": {
+          "feature": {
+            "role": {
+              "dtype": "string",
+              "_type": "Value"
+            },
+            "ref_id": {
+              "dtype": "string",
+              "_type": "Value"
+            }
+          },
+          "_type": "List"
+        }
+      },
+      "_type": "List"
+    },
+    "coreferences": {
+      "feature": {
+        "id": {
+          "dtype": "string",
+          "_type": "Value"
+        },
+        "entity_ids": {
+          "feature": {
+            "dtype": "string",
+            "_type": "Value"
+          },
+          "_type": "List"
+        }
+      },
+      "_type": "List"
+    },
+    "relations": {
+      "feature": {
+        "id": {
+          "dtype": "string",
+          "_type": "Value"
+        },
+        "type": {
+          "dtype": "string",
+          "_type": "Value"
+        },
+        "arg1_id": {
+          "dtype": "string",
+          "_type": "Value"
+        },
+        "arg2_id": {
+          "dtype": "string",
+          "_type": "Value"
+        },
+        "normalized": {
+          "feature": {
+            "db_name": {
+              "dtype": "string",
+              "_type": "Value"
+            },
+            "db_id": {
+              "dtype": "string",
+              "_type": "Value"
+            }
+          },
+          "_type": "List"
+        }
+      },
+      "_type": "List"
+    }
+  },
+  "homepage": "http://www.biocreative.org/tasks/biocreative-v/track-3-cdr/",
+  "license": "Public Domain Mark 1.0",
+  "size_in_bytes": 26632072,
+  "splits": {
+    "train": {
+      "name": "train",
+      "num_bytes": 2026145,
+      "num_examples": 500,
+      "dataset_name": "bc5cdr"
+    },
+    "test": {
+      "name": "test",
+      "num_bytes": 2116547,
+      "num_examples": 500,
+      "dataset_name": "bc5cdr"
+    },
+    "validation": {
+      "name": "validation",
+      "num_bytes": 2086230,
+      "num_examples": 500,
+      "dataset_name": "bc5cdr"
+    }
+  },
+  "version": {
+    "version_str": "1.0.0",
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  }
+}

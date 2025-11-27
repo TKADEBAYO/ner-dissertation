@@ -1,0 +1,13 @@
+dataset,model,precision,recall,f1
+bc5cdr,Fine-tuned BERT,0.943,0.941,0.942
+bc5cdr,HuggingFace,0.755,0.009,0.018
+bc5cdr,spaCy,0.788,0.798,0.793
+conll2003,Fine-tuned BERT,0.972,0.971,0.972
+conll2003,HuggingFace,0.897,0.882,0.883
+conll2003,spaCy,0.813,0.71,0.752
+jnlpba,Fine-tuned BERT,0.914,0.906,0.908
+jnlpba,HuggingFace,0.382,0.01,0.02
+jnlpba,spaCy,0.662,0.767,0.711
+wnut17,Fine-tuned BERT,0.926,0.94,0.926
+wnut17,HuggingFace,0.909,0.862,0.885
+wnut17,spaCy,0.889,0.851,0.869

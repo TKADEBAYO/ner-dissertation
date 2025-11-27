@@ -1,0 +1,8 @@
+Eval_loss: 0.335
+Eval_precision: 0.914
+Eval_recall: 0.906
+Eval_f1: 0.908
+Eval_runtime: 135.026
+Eval_samples_per_second: 14.279
+Eval_steps_per_second: 1.785
+Epoch: 3.000

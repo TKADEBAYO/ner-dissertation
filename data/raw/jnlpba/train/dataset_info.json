@@ -1,0 +1,65 @@
+{
+  "builder_name": "jnlpba",
+  "citation": "@inproceedings{collier-kim-2004-introduction,\ntitle = \"Introduction to the Bio-entity Recognition Task at {JNLPBA}\",\nauthor = \"Collier, Nigel and Kim, Jin-Dong\",\nbooktitle = \"Proceedings of the International Joint Workshop\non Natural Language Processing in Biomedicine and its Applications\n({NLPBA}/{B}io{NLP})\",\nmonth = aug # \" 28th and 29th\", year = \"2004\",\naddress = \"Geneva, Switzerland\",\npublisher = \"COLING\",\nurl = \"https://aclanthology.org/W04-1213\",\npages = \"73--78\",\n}\n",
+  "config_name": "jnlpba_source",
+  "dataset_name": "jnlpba",
+  "dataset_size": 10577272,
+  "description": "NER For Bio-Entities\n",
+  "download_checksums": {},
+  "download_size": 0,
+  "features": {
+    "id": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "tokens": {
+      "feature": {
+        "dtype": "string",
+        "_type": "Value"
+      },
+      "_type": "List"
+    },
+    "ner_tags": {
+      "feature": {
+        "names": [
+          "O",
+          "B-DNA",
+          "I-DNA",
+          "B-RNA",
+          "I-RNA",
+          "B-cell_line",
+          "I-cell_line",
+          "B-cell_type",
+          "I-cell_type",
+          "B-protein",
+          "I-protein"
+        ],
+        "_type": "ClassLabel"
+      },
+      "_type": "List"
+    }
+  },
+  "homepage": "http://www.geniaproject.org/shared-tasks/bionlp-jnlpba-shared-task-2004",
+  "license": "Creative Commons Attribution 3.0 Unported",
+  "size_in_bytes": 10577272,
+  "splits": {
+    "train": {
+      "name": "train",
+      "num_bytes": 8775707,
+      "num_examples": 18546,
+      "dataset_name": "jnlpba"
+    },
+    "validation": {
+      "name": "validation",
+      "num_bytes": 1801565,
+      "num_examples": 3856,
+      "dataset_name": "jnlpba"
+    }
+  },
+  "version": {
+    "version_str": "3.2.0",
+    "major": 3,
+    "minor": 2,
+    "patch": 0
+  }
+}
