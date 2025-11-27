@@ -83,10 +83,10 @@ ner-dissertation/
 
 ## Notes
 
-- Models requiring fine-tuning start from pre-trained BERT checkpoints but need task-specific training to achieve optimal performance.
-- Training on large datasets may take several hours depending on hardware.
-- Evaluation scripts support weighted average F1-score and detailed per-entity metrics.
-- Some warnings related to environment or model weights may appear; these do not generally affect functionality.
+Model fine-tuning used pre-trained BERT base models.
+Token alignment, subword masking, and class imbalance mitigation techniques were applied.
+Metrics include entity-level precision, recall, and F1 across all datasets.
+Due to large file sizes, full model weights are stored only on GitHub.
 
 ## Contact
 
